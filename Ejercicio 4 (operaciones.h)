@@ -1,0 +1,10 @@
+#ifndef ADD_H
+#define ADD_H
+
+int suma (int a, int b);
+int resta (int a, int b);
+int producto (int a, int b);
+int division (int a, int b); 
+// Definimos en cada una que valores van agarrar en funcion a la variables en las que estan establecidas 
+
+#endif 
