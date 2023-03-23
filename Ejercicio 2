@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+    int a, conversion; // establecemos nuestras variables
+    printf ("Ingrese la temperatura en grados Fahrenheit: "); // Pedir al usuario que ingrese un numero
+    scanf ("%d", &a);   // Escaneamos los datos
+    conversion = (a-32) * 5/9; // funcion de conversion de fahrenheit a centigrados
+;
+    printf ("%d grados Fahrenhiet es igual a %d grados centigrados", a, conversion);
+    return 0;
+}
+
