@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main () {
+    int i, n;
+    int fib[100];
+    printf ("Ingrese cualquier número entero: "); // Pedimos al usuario que ingrese hasta que numero quiere ver la serie
+    scanf ("%d", &n);                             // Escaneamos el valor ingresado y lo pasamos a n
+    printf ("Serie de Fibonacci: ");
+
+    fib[0] = 0;
+    fib[1] = 1; // Inicializamos los primero valores de la serie 
+    // Calculo de la serie de Fubinacci
+    for (i = 0 ; i < n; i++) {
+        if (i < 2) {
+            fib[i] = i; // Toma los dos primeros valores de la serie de Fibonacci
+        } else {
+            fib[i] = fib[i-1] + fib[i-2]; // Calcula el resto de terminos 
+        }
+        printf ("%d ", fib[i]);
+    }
+    return 0;
+}
