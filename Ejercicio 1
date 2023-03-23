@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main (){
+    int carnet=21189; // Establecemos el valor de la variable carnet
+    char nombre[5] = "Luis"; // Establecemos el nombre
+    printf("\n Mi nombre es %s y mi numero de carnet es %d\n",nombre,carnet); // Imprimimos el nombre y el numero de carnet 
+    return 0;
+}
