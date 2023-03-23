@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int num[10]; 
+    int i, value;
+    
+    for (i=0; i<=10; i++) // Ciclo para almacenar la posicion del arreglo
+    {
+        printf("Posicion del arreglo %d:\n ", i+1);
+        scanf ("%d", &value);
+        num[i]=value;
+    }
+
+    printf("Arreglo nuevo multiplicado por 2: ");
+    int*Pnum = &num[0];
+
+    for (i=0; i<=10; i++) // ciclo para multiplicar el arreglo por 2
+    {
+        int a = *(num+i);
+        a*= 2;
+        printf("%d ", a);
+    }
+}
