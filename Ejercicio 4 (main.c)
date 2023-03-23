@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "operaciones.h"
+
+int main ()
+{
+    int a, b; // indicamos nuestras variables
+    printf ("Ingrese dos numeros enteros separados por un espacio: ");
+    scanf ("%d %d", &a, &b); // escaneamos los datos ingresados por el usuario
+    int c = suma (a,b);
+    int d = resta (a,b);
+    int f = producto (a,b);
+    int g = division (a,b);
+    // Distintas operaciones que puede hacer la libreria 
+    printf ("suma: %d\n", c);
+    printf ("resta: %d\n", d);
+    printf ("producto: %d\n", f);
+    printf ("divison: %d\n", g);
+    // Muestra el resultado de las operaciones 
+    printf ("El valor de pi es: 3.14159"); // Muestra el valor de Pi
+    
+
+    return 0;
+}
