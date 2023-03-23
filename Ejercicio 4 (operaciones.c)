@@ -1,0 +1,21 @@
+#include "operaciones.h"
+
+int suma (int a, int b)
+{
+    return a+b; // funcion de suma
+}
+
+int resta (int a, int b)
+{
+    return a-b;// funcion de resta
+}
+
+int producto (int a, int b)
+{
+    return a*b; // funcion de multiplicacion 
+}
+
+int division (int a, int b)
+{
+    return a/b; // funcion de division
+}
